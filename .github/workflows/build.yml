@@ -8,6 +8,7 @@ on:
       #- 'apt.txt'
       - 'ci/conda-linux-64.lock'
       - 'ci/environment.yml'
+      - 'ci/Dockerfile'
       #- 'start'
       #- 'postBuild'
       # Trigger rebuilds if the build process changes
