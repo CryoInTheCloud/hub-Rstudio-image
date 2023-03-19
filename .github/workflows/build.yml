@@ -5,12 +5,11 @@ on:
     branches:
       - main
     paths:
-      #- 'apt.txt'
-      - 'ci/conda-linux-64.lock'
-      - 'ci/environment.yml'
-      - 'ci/Dockerfile'
-      #- 'start'
-      #- 'postBuild'
+      - 'conda-linux-64.lock'
+      - 'environment.yml'
+      - 'Dockerfile'
+      - 'start'
+      - 'postBuild'
       # Trigger rebuilds if the build process changes
       - '.github/workflows/build.yaml'
   pull_request:
