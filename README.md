@@ -6,4 +6,4 @@
 
 ## Overview
 
-This image publishes to the `CryoCloud/?` repository in the Docker registry and is meant to be used by R users in the JupyterHub deployment.
+This image publishes to the `cryointhecloud/cryo-hub-r-image` repository in the quay.io registry and is meant to be used by R users in the JupyterHub deployment.
