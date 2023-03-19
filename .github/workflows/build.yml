@@ -8,8 +8,6 @@ on:
       - 'conda-linux-64.lock'
       - 'environment.yml'
       - 'Dockerfile'
-      - 'start'
-      - 'postBuild'
       # Trigger rebuilds if the build process changes
       - '.github/workflows/build.yaml'
   pull_request:
