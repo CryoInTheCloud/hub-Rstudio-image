@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'environment.yml'
+      - 'install.R'
       # Trigger rebuilds if the test process changes
       - '.github/workflows/test.yaml'
 
