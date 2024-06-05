@@ -66,6 +66,9 @@ RUN echo "Checking for 'conda-linux-64.lock' or 'environment.yml'..." \
         find ${NB_PYTHON_PREFIX}/lib/python*/site-packages/bokeh/server/static -follow -type f -name '*.js' ! -name '*.min.js' -delete \
         ; fi
 
+## Run an install.R script, if it exists.
+RUN if [ -f install.R ]; then R --quiet -f install.R; fi
+
 RUN pip install jupyter-rsession-proxy
 
 WORKDIR ${HOME}
